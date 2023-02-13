@@ -1,0 +1,15 @@
+A variable is a “named storage” for data.
+ We can use variables to  data.
+
+
+To create a variable in JavaScript, use the "let" keyword.
+in old javascript, we could use keyword "var" and these 2 have some differneces
+
+Variables named apple and APPLE are two different variables.
+
+
+we also have keyword "const"
+const is unchanging variable
+this keyword is useqd for specific exmples :
+date of someone, color ids(#FF00 or something),
+amount of time it takes to load and etc.
