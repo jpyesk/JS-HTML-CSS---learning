@@ -1,0 +1,6 @@
+we can use "use strict" keyword at the "TOP OF CODE"
+
+browers dont use strict mode
+strict sometimes make a difference so u will get incorrect results
+
+modern structures support it so we dont really have to use it right now
