@@ -1,0 +1,10 @@
+we have 4 logical operators in javascript :
+"||" (OR), 
+"&&" (AND),
+"!" (NOT),
+"??" (Nullish Coalescing)
+
+OR "||" finds the first truthy value
+AND "&&" finds the first falsy value;
+
+
