@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- to add audio to our page, we use "audio" tag with src to play it-->
+    <!-- audio  bracket has many tags :control, src,-->
+    <!-- control is boolean either true or false-->
+    <!-- src is where we type link of desired audio-->
+    <!-- autoplay -- autoplays sound when we open website-->
+    <!-- muted - mutes the song from start-->
+    <!-- loop - loops the song when its end-->
+    <audio controls autoplay muted loop src="Sting - Desert Rose.mp3">
+     </audio>
+
+     <!-- we also have other way to do it if we want o have backup songs-->
+
+    <audio controls autoplay muted loop>
+        <source src="Sting - Desert Rose.mp3"> <!-- basically if this one dont shows up, the second one comes up and if that doe snot work either, text will be shown-->
+        <source src="Sting - Desert Rose.wav">
+        This browser dont support html5
+    </audio>
+    
+</body>
+</html>
