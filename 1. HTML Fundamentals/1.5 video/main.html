@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- how to add video only type of MP4,WEBM,OGG-->
+    <!-- we use video brackets which has same tags as audio : src, width,height,mute,controls,mute,autplay and etc...-->
+    <video
+      muted autoplay controls src="Video tutorial.mp4" width="300" height ="300"> 
+    </video>
+    <br>
+    <!-- we can also write it the other way just like audio bracket-->
+            <!-- if first dont load for some reason, second file goes in firsts place-->
+    <video width="200" height="200" autoplay controls>
+        <source src="Video tutorial.mp4" >
+        <source src="Video tutorial.mp4">
+    </video>
+</body>
+</html>
