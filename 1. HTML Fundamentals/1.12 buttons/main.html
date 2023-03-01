@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button showcase </title>
+</head>
+<body> 
+    <!-- in html we also have need to create buttons and for that
+    we use "<button> </button" tags
+    -->
+    <button> Click me</button>
+
+    <!-- obviously only this makes no sense so when we click button it must do something-->
+    <!-- for example, after clickin this button, it will take us to some other page-->
+    <br>
+    <br>
+    <a href="https://www.google.com" target="_blank">
+        <button> Click for google</button>
+    </a>
+    <!-- we can also add "disabled" attribute to button and it wont be accessible-->
+    <br>
+    <br>
+    <a href="https://www.youtube.com">
+        <button disabled >you cant click me!</button>
+    </a>
+    
+    <!-- obviously we can use style to modify the button cuz without it button is plain..-->
+    <!-- and we can also add javascript parts using "onclick"-->
+    <!-- "onclick" as name suggests, does something after clickin it-->
+    <br>
+    <br>
+
+    <button 
+    style="background-color: gray;color: yellow;border-radius: 5px;"
+    onclick="somefunction()"> Greeting button</button>
+
+    <p id="test"> Greeting</p>
+
+    <script>
+        function somefunction(){
+            document.getElementById("test").innerHTML = "Goodbye";
+        }
+    </script>
+    
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- in this part, we shuld be able to create something like this-->
+    <h2> HTML forms</h2>
+    <!-- inside forms , we use "input" tags,and inside input tag, we have attribute type which has many different varieties. -->
+    <!-- we use "label" to name the box and what is it for  where we write it -->
+    <!-- type has many variations and DEFAULT is "text"-->
+    <!-- <input type="text" defines a single-line text input field:-->
+    <!-- <input type="password"> defines a password field: -->
+    <!-- <input type="reset">  defines a reset button that will reset all form values to their default values: -->
+    <!-- <input type="search"> -->
+    <!-- <input type="submit">  -->
+    <!-- <input type="tel"> -->
+    <!-- <input type="text"> -->
+    <!-- <input type="time"> -->
+    <!-- <input type="url"> -->
+    <!-- <input type="week"> -->
+    <!-- <input type="radio"> -->
+    <!-- <input type="range"> -->
+    <!-- <input type="button": > -->
+    <!-- <input type="checkbox"> -->
+    <!-- <input type="color"> -->
+    <!-- <input type="date"> -->
+    <!-- <input type="datetime-local"> -->
+    <!-- <input type="email"> -->
+    <!-- <input type="file"> -->
+    <!-- <input type="hidden"> -->
+    <!-- <input type="image"> -->
+    <!-- <input type="month"> -->
+    <!-- <input type="number"> -->
+
+
+    <!-- inside label we have "for" which must be same as inputs "id"-->
+    <!-- lets write example of form which as some input types shown below ONLY HTML-->
+    <form>
+    <div>
+        <!-- text input example-->
+        <label for="fname">first name </label>
+        <input  type="text" placeholder="enter your first name" name ="fname">
+    </div>
+<br>
+    <div>
+        <!-- "text" type input example-->
+        <label for="lname">last name </label>
+        <input type="text" placeholder="enter your last name" name="lname">
+    </div>
+<br>
+    <div>
+        <!-- "password" type input example-->
+        <label for="password">Password</label>
+        <input type="password" placeholder="enter your password" name="password">
+    </div>
+<br>
+    <div>
+        <!-- "email" type input example-->
+        <label for="email">email</label>
+        <input type="email" placeholder="enter your email" name="email">
+    </div>
+<br>
+    <div>
+        <!-- "tel" type input example-->
+        <label for="phone">mobile number</label>
+        <input type="tel" placeholder="123-456-789" name="phone">
+    </div>
+<br>
+    <div>
+        <!-- "date" type input example-->
+        <label for="bdate">birthdate</label>
+        <input type="date" placeholder="password" name="bdate">
+    </div>
+<br>
+    <div>
+        <!-- "number" type input example-->
+        <label for="quantity"> quantity:</label>
+        <input type="number" name="quantity" min="0" max="100">
+    </div>
+    <div>
+        <h4> Specify your gender:</h4>
+        <!-- "ID" = "text" where <label>"text"</label> this means after clicking this "text" on website, it will mark automatically-->
+        <!-- value-->
+            <!-- For "button", "reset", and "submit" - it defines the text on the button -->
+            <!-- For "text", "password", and "hidden" - it defines the initial (default) value of the input field -->
+            <!-- For "checkbox", "radio", "image" - it defines the value associated with the input (this is also the value that is sent on submit) -->
+
+        <!-- if we dont type name for each "Gender", then it will be possible to mark all of them together-->
+        <!-- because it becomes like 3 different labels ,however, we have 1 label and 3 inputs-->
+        <!-- so we must have input names same as label name-->
+        <!-- in this case label for="Gender", so input names should be "Gender"-->
+        <label for="Gender"> Gender:</label>
+        
+        <label for="Male">Male</label>
+        <input type="radio"  name="Gender" value="Male" id="Male">
+
+        <label for="Female"> Female</label>
+        <input type="radio" name="Gender"  value="Female"id="Female">
+
+        <label for="Other">Other</label>
+        <input type="radio" name="Gender" value="Other" id="Other">
+    </div>
+<br>
+    <div>
+        <input type="reset" style="background-color:black; color: red;border-radius:5px;">
+        <input type="submit" style="background-color: aqua; color: blue; border-radius: 5px;">
+    </div> 
+
+    </form>
+    
+</body>
+</html>
